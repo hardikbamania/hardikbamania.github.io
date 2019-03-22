@@ -1,0 +1,93 @@
+.body {
+    margin-top: 0%;
+
+}
+
+
+.breadcrumb-wrapper {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+
+    li {
+        color: white;
+    }
+
+    li a {
+        color: white;
+    }
+}
+
+.jumbotron-custom {
+    .light-box {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .primary-box {
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
+.cta-inner {
+
+    .title,
+        {
+        color: black;
+    }
+
+    .exeption {
+        color: rgba(60, 60, 60, 1);
+    }
+
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.button {
+    border-radius: 10px;
+}
+
+.title {
+    color: white;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100%;
+}
+
+.section-lg {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.m-t-10:first-child {
+    margin-top: 10px;   
+}
+
+.m-t-10{
+    margin-top: 20px;   
+}
+
+.m-t-10:last-child {
+    margin-top: 10px;   
+}
+
+// html *:first-child {
+//     margin-top: 0;
+//     margin-bottom: 0
+
+// }
+
+// html *:last-child {
+//     margin-top: 0;
+//     margin-bottom: 0
+// }
+.rd-navbar-static.rd-navbar-decorative .rd-navbar-panel {
+    width: 200px;
+}
+
+.margin-minus{
+    margin-left: 500px;
+}
