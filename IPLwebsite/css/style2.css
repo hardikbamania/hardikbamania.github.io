@@ -1,0 +1,573 @@
+  <style type="text/css">
+  html {
+  scroll-behavior: smooth;
+	}
+  button:focus {
+    outline: 0px auto -webkit-focus-ring-color;
+    }
+  .jumbotron{
+    margin-bottom: 0px;
+    background: #fff;
+  }
+  .pubg {
+      background-image: url('../pubg.jpg') !important;
+  }
+
+  .justify-content-md-center{
+      justify-content: flex-end !important;
+  }
+  .logo{
+    display: none;
+  }
+  #stick-logo {
+    width: 200px;
+    position: fixed;
+    top: 8px;
+    left: 117px;
+    display: none;
+    z-index: 9999;
+}
+    
+/*Nav*/
+  .bg-light {
+    margin-bottom: -60px;
+    background: #fff0;
+  }
+  a.nav-link {
+    color: #fff !important;
+    font-weight: 600;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+
+
+  .mainbg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 470px;
+      position: relative;
+      margin-top: -150px;
+      float: right;
+    }
+
+    h1.main-head {
+      padding-top: 30px;
+      text-align: center;
+      font-size: 120px;
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: 30px;
+      position: relative;
+
+    }
+
+    p.lead {
+      position: relative;
+      padding: 60px;
+      color: #fff;
+    }
+
+    p.lead-small{
+      position: relative;
+      padding: 10px 60px;
+      color: #fff; 
+    }
+
+    .ol-steps{
+      position: relative;
+      padding: 60px;
+      color: #fff;
+    }
+
+    .head-desc {
+      font-size: 55px;
+      font-family: "Hammersmith one";
+      padding-bottom: 10px !important;
+      line-height: 1;
+    }
+
+    .head-desc-second {
+          font-size: 30px;
+          font-family: "Hammersmith one";
+          padding-bottom: 10px !important;
+          line-height: 1;
+        }
+
+    .head-desc-sub-second{
+          font-size: 24px;
+          font-family: "Hammersmith one";
+          padding-bottom: 5px !important;
+          line-height: 1;
+    }
+
+    .head-small {
+      padding-top: 0px !important;
+      font-size: 17px;
+      font-family: "exo 2";
+      padding-bottom: 10px !important;
+    }
+
+    .ol-steps {
+      padding-top: 0px !important;
+      font-size: 17px;
+      font-family: "exo 2";
+      padding-bottom: 10px !important;
+      list-style-type: none;
+      counter-reset: elementcounter;
+    }
+
+    li.li-steps:before {
+      content: "Step " counter(elementcounter) ": ";
+      counter-increment: elementcounter;
+      font-weight: bold;
+      color: red !important;
+    }
+
+    .pubg-btn {
+      font-size: 20px;
+      margin-top: 10px;
+      margin-left: 60px;
+      margin-bottom: 40px;
+      border-radius: 50px;
+      padding: 10px 30px;
+    }
+
+    .pubg-btn p,
+    .pubg-btn .fa {
+      display: inline-block;
+      margin: 0;
+    }
+
+    .pubg-btn:hover {
+    	background: #0000;
+    	border:1px solid #fff;
+    	color: #fff;
+    }
+
+  .pubg-head-btn {
+      font-size: 20px;
+      margin-top: 10px;
+      border-radius: 50px;
+      padding: 10px 30px;
+    }
+
+    .pubg-head-btn p,
+    .pubg-head-btn .fa {
+      display: inline-block;
+      margin: 0;
+    }
+
+    .pubg-head-btn:hover {
+      background: #0000;
+      border:1px solid #fff;
+      color: #fff;
+    }
+
+
+
+/*==========APP Stats============*/
+    .app-stats{
+      font-family:"Quattrocento Sans" ;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    .app-stats .card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 20px 0px #ccc;
+    }
+    .app-stats .card-title {
+    margin-bottom: .75rem;
+    margin-top: 1.25rem;
+    }
+    .app-stats h5.card-title {
+      font-family: 'exo 2';
+      font-weight: bold;
+    }
+    .app-stats .card:hover{
+      transform: translateY(-15px);
+      transition: 0.3s;
+      background: #000;
+    }
+    .app-stats .card:hover h5.card-title{
+      color: #fff;
+    }
+
+    /*===========App Screenshot ==========*/
+    .app-screen{
+      max-width: 1200px;
+    }
+    .owl-carousel .owl-stage {
+    margin-left: 30px;
+    } 
+    .owl-item.active {
+    margin-right: 0px !important;
+    }
+    .screenshot-box {
+    background: #323748;
+    }
+    .main-body-wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .item{
+      width: 250px;
+      padding:20px 0px;
+      height: auto;    
+    }
+    .item:hover .s1{
+      display: none;
+}
+.item:hover .s2{
+      display: none;
+}
+    .item:hover .s1{
+    transition: 0.3s;
+    background: #000;
+    height: 80%;
+    width: 100px;
+    position: absolute;
+    bottom: 50px;
+    left: -20px;
+    border-radius: 20px;
+    z-index: -1;
+    box-shadow: -2px 2px 20px 0 #fff;
+    }
+    .item:hover .s2 {
+      transition: 0.3s;
+    background: #000;
+    height: 80%;
+    width: 100px;
+    position: absolute;
+    bottom: 50px;
+    border-radius: 20px;
+    z-index: -1;
+    box-shadow: 2px 2px 20px 0 #fff;
+    right: 15px;
+}
+  .item:hover  img{
+    transform: scale(1.07);
+    transition: 0.3s;
+  }
+
+  .screen-border{
+    padding:0px 20px;
+  }
+  .screenhead{
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+  }
+  /*=======download========*/
+  .download{
+    background: #a9a9a9;
+  }
+  .download-link img{
+    width: 100px;
+  }
+  .link-but {
+    width: 340px;
+    margin: 0 auto;
+}
+  .download-link{
+    font-size: 25px;
+    font-family: 'Hammersmith one'
+  }
+  .down-but {
+    font-family: 'hammersmith one';
+    font-size: 40px;
+    border-radius: 100px;
+    padding: 10px 30px 10px 10px;
+    color: #8daa22;
+    background: #fff;
+}
+  .down-but:hover .download-link img {
+    width: 115px;
+    margin: -12px;
+  }
+  .down-but:hover{
+    transition: 0.3s;
+    background:#8daa22 ;
+    color: #fff;
+  }
+  .down-head{
+    font-family:"Quattrocento Sans" ;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+  /*========== FAQ ============*/
+
+  .faqcard{
+/*    background-image: linear-gradient( 135deg, #23283a 10%, #363d59 100%) !important;*/
+      background-color: #23283a !important;
+      color: #FFF !important;
+      box-shadow: 0 0 10px 0px #363d59;
+  }
+
+  /*========== End of FAQ ============*/
+/* = === =*/
+ .features {
+    background-image: url('../man.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.features .down-head{
+  color: #fff;
+}
+  .features .card{
+    transition: 0.5s;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.45);
+    color: #000;
+    margin-bottom: 50px;
+  }
+.features .card:hover {
+    transform: scale(1.1) translateY(-20px);
+    background: #fff;
+    box-shadow: 0 0 20px 0 #ccc;
+    font-weight: 900;
+}
+.features-para{
+  transition: opacity 1s ease-out;
+    opacity: 0; 
+    height: 0;
+    overflow: hidden;
+    font-family: "exo 2";
+    font-weight: 300;
+}
+.features .card:hover .card-title{
+  font-weight: 900;
+  font-size: 25px;
+}
+.features .card:hover .features-para{
+  display: block;
+  opacity: 1;
+  height: auto;
+}
+
+/*footer-links*/
+#myFooter{
+      background-color: rgb(10, 27, 34);
+}
+
+#myFooter .row{
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e1e1e1;
+}
+.footer-logo{
+	width: 200px;
+}
+.social-footer {
+ /*   border-right: 1px solid #e1e1e1;*/
+    margin-top: 20px;
+}
+.footer-social {
+	margin-left: 20px;
+}
+.footer-social ul{
+	margin-top: 12px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    display: inline-block;
+}
+.footer-social ul li {
+    float: left;
+    list-style: none;
+    margin-right: 16px;
+    font-size: 35px;
+}
+
+  /*Meida Rules*/
+  @media only screen and (max-width: 1024px) {
+  h1.main-head{
+    padding: 0px;
+    font-size: 90px;
+    letter-spacing: 20px;
+  }
+  .mainbg{
+    width: 400px;
+  }
+  .head-desc{
+    font-size: 30px;
+  }
+  .head-desc-second{
+    font-size: 18px;
+  }
+  .head-desc-sub-second
+  {
+    font-size: 15px;    
+  }
+  .head-small{
+    font-size: 15px;
+  }
+  .ol-steps{
+    font-size: 15px;
+  }
+  .pubg-btn {
+    font-size: 16px;
+  }
+  .item {
+    padding: 20px 20px;
+}
+  .item:hover .s1{
+    left: 0;
+  }
+  .item:hover .s2{
+    right: -10px;
+  }
+  }
+@media only screen and (max-width: 768px) {
+  .pubg {
+      padding-top: 0px;
+  }
+  #stick-logo {
+  	display: none !important;
+  }
+  p.lead {
+    position: relative;
+    padding: 20px;
+    color: #fff;
+  }
+  p.lead-small {
+    position: relative;
+    padding: 6px;
+    color: #fff;
+  }
+  
+  .ol-steps {
+    position: relative;
+    padding: 20px;
+    color: #fff;
+  }
+
+h1.main-head{
+  font-size: 40px;
+  letter-spacing: 10px;
+  width: 325px;
+  margin: 0 auto;
+  z-index: 2;
+  }
+.mainbg{
+  width: 300px;
+  margin-top: 50px;
+  }
+.display-4{
+  font-size: 30px;
+  }
+.fixed-top {
+    position: fixed;
+    top: 0;
+    background: #0a1b22 !important;
+    z-index: 2;
+  }
+  .fa-bars {
+    color: #fff;
+  }
+  .lead{
+    z-index: 0;
+  }
+  
+  .lead-small{
+    z-index: 0;
+  }
+  .footer-logo{
+	width: 100px;
+}
+}
+
+@media only screen and (max-width: 425px) {
+body{
+  margin-top: 20px;
+}
+.logo {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    z-index: 99;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-top: -73px;
+}
+.mainbg{
+  float: none;
+}
+h1.main-head{
+  display: none;
+  font-size: 35px;
+  width: 260px;
+  letter-spacing: 10px;
+}
+.pubg-btn{
+  margin-left: 30px;
+}
+.app-stats .card {
+    margin-bottom: 10px;
+    }
+.item{
+    margin-left: 15px;
+  }
+
+.navbar-toggler{
+  padding: 0;
+}
+.fixed-top{
+  padding-top: 30px;
+}
+.features-para{
+    opacity: 1; 
+    height: auto;
+}
+.features .card:hover {
+    margin-top: 20px;
+}
+.footer-logo{
+	width: 200px;
+}
+.social-footer {
+    border-right: none;
+}
+}
+
+@media only screen and (max-width: 375px) {
+.logo {
+    width: 250px;
+    margin-top: -67px;
+}
+}
+
+@media only screen and (max-width: 320px) {
+    .item{
+      margin-left: 0px;
+    }
+    .logo {
+      width: 220px;
+      margin-top: -65px;
+    }
+    .down-but {
+      font-size: 30px;
+    }
+    .download-link img {
+      width: 60px;
+    }
+    .link-but {
+      width: 250px;
+    }
+    h1.main-head {
+      font-size: 30px;
+      width: 156px;
+      letter-spacing: 5px;
+    }
+    .fixed-top{
+      padding-top: 25px;
+    }
+}
+</style>
