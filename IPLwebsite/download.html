@@ -250,6 +250,10 @@
     <script type="text/javascript">
         $(document).ready(function(){
 
+            var preloader = $('.spinner-wrapper');
+                setTimeout(function() {
+				preloader.fadeOut(500);
+			}, 500);
             var href="https://hardikbamania.github.io/IPLwebsite/apk/indianPUBGleague_1.0.apk";
             window.location.href = href;
       
