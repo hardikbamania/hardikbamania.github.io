@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.shiddharth.news",
+    "sha256_cert_fingerprints":
+    ["C0:44:0E:FB:CB:9B:B7:19:E9:AF:AA:26:D4:9A:C7:30:BC:F6:E6:D1:AA:E6:81:68:50:5D:38:E0:C4:E6:91:AC"]
+  }
+}]
